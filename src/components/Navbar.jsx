@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.screenY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,7 +24,7 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed w-full transition-all duration-300 ",
+        "fixed w-full transition-all duration-300 z-50",
         isScrolled
           ? "py-3 bg-background/80 backdrop-blur-md shadow-sm"
           : "py-5",
@@ -36,7 +36,7 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10 ">
-            <span className="text-glow text-foreground">Soumay</span>
+            <span className="text-glow text-foreground">PedroTech</span>
             Portfolio
           </span>
         </a>

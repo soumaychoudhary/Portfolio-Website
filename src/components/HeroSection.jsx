@@ -6,7 +6,7 @@ export const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
-      <div className="container max-width-4xl mx-auto text-center z-10">
+      <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hi, I'm</span>
@@ -14,14 +14,14 @@ export const HeroSection = () => {
             <span className="text-gradient opacity-0 animate-fade-in-delay-2"> Choudhary</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             I enjoy building things on the web and turning simple ideas into real applications.
             I like experimenting with web technologies and exploring AI/ML to make smarter solutions.
             I'm always learning, improving my skills, and pushing myself with new challenges.
           </p>
 
           <div>
-            <a href="#projets" className="cosmic-button opacity-0 animate-fade-in-delay-4">
+            <a href="#projects" className="cosmic-button opacity-0 animate-fade-in-delay-4">
               View My Work
             </a>
           </div>
@@ -29,7 +29,7 @@ export const HeroSection = () => {
       </div>
 
       <div 
-        className="absolute bottom-0 left-1/2 transform-translate-x-1/2 flex flex-col items-center animate-bounce"
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce"
       >
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary" />
